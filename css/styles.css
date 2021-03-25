@@ -1,0 +1,47 @@
+/* 
+    IMPORTANT NOTE:
+    It's always good to debug with borders.  
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 
+        Border box tells the browser to include 
+        the padding and border in an element's 
+        total width and height
+
+        https://www.w3schools.com/css/css3_box-sizing.asp
+    */
+}
+
+.container {
+    border: 3px solid red;
+    padding: 8px;
+    /* Add stuff below this line */
+}
+
+.card-container {
+    border: 3px solid blue;
+    padding: 10px;
+    width: 40%;
+    /* Add stuff below this line */
+}
+
+.card-item-1 {
+    border: 3px solid green;
+    text-align: center;
+}
+.card-item-2 {
+    border: 3px solid green;
+    text-align: center;
+}
+
+
+
+/* Don't touch these elements. */
+.one, .two, .three {
+    margin: 10px;
+    border: brown 3px solid;
+}
