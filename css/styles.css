@@ -1,6 +1,8 @@
 /* 
     IMPORTANT NOTE:
-    It's always good to debug with borders.  
+    It's always good to debug with borders
+    and background colours.  
+    Red is a good colour to use.
 */
 
 * {
@@ -16,32 +18,102 @@
     */
 }
 
+/* Parent container for .card-container */
 .container {
     border: 3px solid red;
     padding: 8px;
+    
     /* Add stuff below this line */
+
+
 }
 
+/* Parent container for .card-item-1 
+and .card-item-2 */
 .card-container {
     border: 3px solid blue;
     padding: 10px;
     width: 40%;
     /* Add stuff below this line */
+    /* Align 'card-item-1' and 'card-item-2' to the center of the 'card-container' */
+
+    /* Explore flex-start, flex-end, space-between, space-around, space-evenly */
+
 }
 
-.card-item-1 {
+.card-item-1, .card-item-2 {
     border: 3px solid green;
     text-align: center;
 }
-.card-item-2 {
-    border: 3px solid green;
-    text-align: center;
-}
 
-
-
-/* Don't touch these elements. */
 .one, .two, .three {
     margin: 10px;
     border: brown 3px solid;
+}
+
+/* HEADER SECTION */
+.header-container {
+    /* header-container is the parent <div> for 
+    the header */
+    border: 3px solid darkslategrey;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.header {
+    /* header-container is the parent <div> for 
+    the header items 1, 2 and 3. */
+    border: 3px solid darkturquoise;
+    padding: 3px;
+}
+
+.header-item-1, .header-item-2, .header-item-3 {
+    border: 3px solid deeppink;
+    padding: 3px;
+}
+
+/* GRiD AREA */
+.grid-container {
+    /* Grid container is the parent to grid */
+    /* What happens when you add df here? */
+    border: 3px solid red;
+    margin-top: 3px;
+    /* display: flex; */
+}
+
+.grid {
+    /* Grid is the child of .grid-container and the the parent of grid item */
+    border: 3px solid blue;
+    margin: 5px;
+}
+
+.grid-item {
+    border: 1px solid black;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.item1 {
+    background-color: lightcoral;
+}
+
+.item2 {
+    background-color: lightseagreen;
+}
+
+.item3 {
+    background-color: lightslategrey;
+}
+
+.item4 {
+    background-color: lightskyblue;
+}
+
+.item5 {
+    background-color: lightgreen;
+}
+
+.item6 {
+    background-color: lightpink;
 }
