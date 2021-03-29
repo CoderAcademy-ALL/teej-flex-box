@@ -1,1 +1,22 @@
 /* use media queries for screen sizes 500px, 800px, 1200px */ 
+
+body {
+    background-color: tan;
+    color: black;
+  }
+  
+  /* On screens that are 992px wide or less, the background color is blue */
+  @media screen and (max-width:800px) {
+    body {
+      background-color: blue;
+      color: white;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 500px) {
+    body {
+      background-color: olive;
+      color: white;
+    }
+  }
