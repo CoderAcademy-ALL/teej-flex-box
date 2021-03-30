@@ -58,7 +58,7 @@ body {
   }
   
   /* On screens that are 500px wide or less, the background color is olive */
-  @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     body {
       background-color: lightgrey;
       color: black;
@@ -71,6 +71,7 @@ body {
 
     .card {
         padding: 10px;
+        flex: 1;
     }
 
     img {
@@ -78,16 +79,4 @@ body {
         height: 100px;
         border-radius: 50%;
     }
-
-    .green {
-        flex: 1;
-    }
-    
-    .bop {
-        flex: 1;
-    }
-    
-    .lemon {
-        flex: 1;
-    }
-  }
+}
